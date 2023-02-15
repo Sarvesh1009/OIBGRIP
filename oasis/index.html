@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<body bgcolor="cyan"> 
+  
+    
+    <center>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius & kelvin </p>
+
+<p>
+   
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit">
+
+</p>
+<p>
+    
+    <label>Celcius: <button style="height:1.2rem;width:12%"> <span id="outputCelcius"></span> </button> </label>
+
+    </p>
+    <p>
+        
+       <label >kelvin:  <button style="height:1.2rem;width:12%"> <span id="outputkelvin"></span> </button> </label>
+    
+       </p>
+<p> 
+   
+     <button onclick ="temperatureConverter()" >go for result </button>
+   
+</p>
+<a href="celcius .html" style="padding: 0 0 0 150px;"><img src="gifgit.gif" width="33%"></a>
+</center>
+
+<script>
+function temperatureConverter() {
+ var valNum = document.getElementById("inputFahrenheit").value;
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+  document.getElementById("outputkelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+</script>
+
+</body>
+</html>
+

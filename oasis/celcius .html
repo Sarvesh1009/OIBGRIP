@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>temperature converter </title>
+<body bgcolor="Azure" >
+<center>
+<p> Celsius field to convert the value to Fahrenheit an kelvin .</p>
+
+<p>
+  <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius"  >
+</p>
+<p style="margin-top:-12px">
+  <label >Fahrenheit:  <button style="height:1.2rem;width:9.5%"><span id="outputFahrenheit"></span></button></label><br/> &nbsp; &nbsp; &nbsp; 
+  <label>kelvin:  <button style="height:1.2rem;width:9.8%"><span id="outputkelvin"></span></button></label><br/>
+<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button onclick ="temperatureConverter()" >go for result </button>
+ </p>
+</center>
+<!-- <script>
+ function temperatureConverter() {
+
+var valNum = document.getElementById("inputCelsius").value;
+   valNum = parseFloat(valNum);
+   document.getElementById("outputFahreheit").innerHTML=(valNum*1.8)+32;
+   document.getElementById("outputkelvin").innerHTML=valNum+273.15;
+}
+</script> -->
+<script>
+    function temperatureConverter() {
+     var valNum = document.getElementById("inputCelsius").value;
+      valNum = parseFloat(valNum);
+      document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+      document.getElementById("outputkelvin").innerHTML=valNum+273.15;
+    }
+    </script>
+</body>
+</html>
+
